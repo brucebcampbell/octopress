@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+
+		<title>Supersized - Full Screen Background Slideshow jQuery Plugin</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slideshow               :   1,			// Slideshow on/off
+					autoplay				:	1,			// Slideshow starts playing automatically
+					start_slide             :   1,			// Start slide (0 is random)
+					stop_loop				:	0,			// Pauses slideshow on last slide
+					random					: 	0,			// Randomize slide order (Ignores start slide)
+					slide_interval          :   3000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	1000,		// Speed of transition
+					new_window				:	1,			// Image links open in new window/tab
+					pause_hover             :   0,			// Pause slideshow on hover
+					keyboard_nav            :   1,			// Keyboard navigation on/off
+					performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+					image_protect			:	1,			// Disables image dragging and right click with Javascript
+															   
+					// Size & Position						   
+					min_width		        :   0,			// Min width allowed (in pixels)
+					min_height		        :   0,			// Min height allowed (in pixels)
+					vertical_center         :   1,			// Vertically center background
+					horizontal_center       :   1,			// Horizontally center background
+					fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+					fit_portrait         	:   1,			// Portrait images will not exceed browser height
+					fit_landscape			:   0,			// Landscape images will not exceed browser width
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					thumb_links				:	1,			// Individual thumb links for each slide
+					thumbnail_navigation    :   0,			// Thumbnail navigation
+					slides 					:  	[			// Slideshow Images
+{image : 'image001.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image001.jpg', url : ''},
+{image : 'image002.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image002.jpg', url : ''},
+{image : 'image003.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image003.jpg', url : ''},
+{image : 'image004.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image004.jpg', url : ''},
+{image : 'image005.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image005.jpg', url : ''},
+{image : 'image006.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image006.jpg', url : ''},
+{image : 'image007.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image007.jpg', url : ''},
+{image : 'image008.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image008.jpg', url : ''},
+{image : 'image009.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image009.jpg', url : ''},
+{image : 'image010.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image010.jpg', url : ''},
+{image : 'image011.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image011.jpg', url : ''},
+{image : 'image012.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image012.jpg', url : ''},
+{image : 'image013.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image013.jpg', url : ''},
+{image : 'image014.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image014.jpg', url : ''},
+{image : 'image015.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image015.jpg', url : ''},
+{image : 'image016.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image016.jpg', url : ''},
+{image : 'image017.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image017.jpg', url : ''},
+{image : 'image018.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image018.jpg', url : ''},
+{image : 'image019.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image019.jpg', url : ''},
+{image : 'image020.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image020.jpg', url : ''},
+{image : 'image021.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image021.jpg', url : ''},
+{image : 'image022.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image022.jpg', url : ''},
+{image : 'image023.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image023.jpg', url : ''},
+{image : 'image024.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image024.jpg', url : ''},
+{image : 'image025.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image025.jpg', url : ''},
+{image : 'image026.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image026.jpg', url : ''},
+{image : 'image027.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image027.jpg', url : ''},
+{image : 'image028.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image028.jpg', url : ''},
+{image : 'image029.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image029.jpg', url : ''},
+{image : 'image030.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image030.jpg', url : ''},
+{image : 'image031.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image031.jpg', url : ''},
+{image : 'image032.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image032.jpg', url : ''},
+{image : 'image033.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image033.jpg', url : ''},
+{image : 'image034.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image034.jpg', url : ''},
+{image : 'image035.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image035.jpg', url : ''},
+{image : 'image036.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image036.jpg', url : ''},
+{image : 'image037.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image037.jpg', url : ''},
+{image : 'image038.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image038.jpg', url : ''},
+{image : 'image039.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image039.jpg', url : ''},
+{image : 'image040.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image040.jpg', url : ''},
+{image : 'image041.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image041.jpg', url : ''},
+{image : 'image042.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image042.jpg', url : ''},
+{image : 'image043.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image043.jpg', url : ''},
+{image : 'image044.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image044.jpg', url : ''},
+{image : 'image045.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image045.jpg', url : ''},
+{image : 'image046.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image046.jpg', url : ''},
+{image : 'image047.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image047.jpg', url : ''},
+{image : 'image048.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image048.jpg', url : ''},
+{image : 'image049.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image049.jpg', url : ''},
+{image : 'image050.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image050.jpg', url : ''},
+{image : 'image051.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image051.jpg', url : ''},
+{image : 'image052.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image052.jpg', url : ''},
+{image : 'image053.jpg', title : 'Image Credit: ', thumb : 'thumbnail/image053.jpg', url : ''}
+												],
+												
+					// Theme Options			   
+					progress_bar			:	1,			// Timer for each slide							
+					mouse_scrub				:	0
+					
+				});
+		    });
+		    
+		</script>
+		
+	</head>
+	
+	<style type="text/css">
+		ul#demo-block{ margin:0 15px 15px 15px; }
+			ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/bg-black.png'); font:11px Helvetica, Arial, sans-serif; }
+			ul#demo-block li a{ color:#eee; font-weight:bold; }
+	</style>
+
+<body>
+
+	
+	<!--Thumbnail Navigation-->
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+	<!--Arrow Navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+	
+	<div id="thumb-tray" class="load-item">
+		<div id="thumb-back"></div>
+		<div id="thumb-forward"></div>
+	</div>
+	
+	<!--Time Bar-->
+	<div id="progress-back" class="load-item">
+		<div id="progress-bar"></div>
+	</div>
+	
+	<!--Control Bar-->
+	<div id="controls-wrapper" class="load-item">
+		<div id="controls">
+			
+			<a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+		
+			<!--Slide counter-->
+			<div id="slidecounter">
+				<span class="slidenumber"></span> / <span class="totalslides"></span>
+			</div>
+			
+			<!--Slide captions displayed here-->
+			<div id="slidecaption"></div>
+			
+			<!--Thumb Tray button-->
+			<a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
+			
+			<!--Navigation-->
+			<ul id="slide-list"></ul>
+			
+		</div>
+	</div>
+
+</body>
+</html>

@@ -5,19 +5,15 @@ date: 2014-03-09 23:44:50 +0000
 comments: true
 categories: 
 ---
-Spectral Geometry concerns itself with the relationships between a geometric structure and the spectra of a
-differential operator, typically the Laplacian.   Inferring the geometry from the spectra is a type of inverse
-problem since two non isometric manifolds may share the same spectra.  Going the other way, we encounter
-isoperimetric inequalities and spectral gap theorems.  "Can One Hear the Shape of a Drum?" was the of an article
+Spectral Geometry concerns itself with the relationships between a geometric  structure and the spectra of a differential operator, typically the Laplacian.   Inferring the geometry from the spectra is a type of inverse
+problem since two non isometric manifolds may share the same spectra.  Going the other way, we encounter isoperimetric inequalities and spectral gap theorems.  "Can One Hear the Shape of a Drum?" was the of an article
  by Mark Kac in the American Mathematical Monthly 1966.   The frequencies at which a drum vibrate depends on its shape.
- The elliptic PDE  $$ \nabla^2 A + k A = 0$$ tells us the frequencies if we know the shape.
- These frequencies are the eigenvalues of the Laplacian in the region.
- Can the spectrum of the Laplacian  tell us the shape if we know the frequencies?  Hermann Weyl showed the eigenvalues
- of the Laplacian in the compact domain $$\Omega$$ are distributed according to
+ The elliptic PDE  $$ \nabla^2 A + k A = 0$$ tells us the frequencies if we know the shape.  These frequencies are the eigenvalues of the Laplacian in the region.  Can the spectrum of the Laplacian  tell us the shape if we know the frequencies?  Hermann Weyl showed the eigenvalues  of the Laplacian in the compact domain $$\Omega$$ are distributed according to
 
  $$ N(\lambda) \sim (2 \pi)^{-d) \omega_d \lambda^{\frac{d}{2}} vol(\Omega}$$
 
 The Laplace Beltrami operator is the generalization of
+
  $$\nabla \circ \nabla = \Delta$$ to $$\mathcal{M}$$
 
 $$\Delta f = tr(H(f))$$
